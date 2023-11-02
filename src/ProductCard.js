@@ -21,6 +21,14 @@ function ProductCard({ product }) {
 
   return (
     <Card style={{ width: '18rem', marginBottom: '20px' }}>
+      {product.imageUrl && (
+        <Card.Img
+          variant="top"
+          src={product.imageUrl}
+          alt={product.title}
+          style={{ height: '180px', objectFit: 'cover' }}
+        />
+      )}
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>

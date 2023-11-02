@@ -6,12 +6,11 @@ const CartProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const fetchProducts = () => {
+    const fetchProducts = async () => {
       try {
-        fetch("http://localhost:3000/products.json").then(res => res.json()).then((data) => setProducts(data.products))
-        // console.log(response.json());
-        // const data = await response.json();
-        // setProducts(data.products);
+        const response = await fetch("products.json");
+        const data = await response.json();
+        setProducts(data);
       } catch (error) {
         console.error("Failed to fetch products", error);
       }

@@ -1,0 +1,9 @@
+[
+  { "id": 1, "title": "Kettle", "price": 20, "imageUrl": "kettle.jpeg" },
+  { "id": 2, "title": "Pan", "price": 15, "imageUrl": "pan.jpeg" },
+  { "id": 3, "title": "Toaster", "price": 25, "imageUrl": "toaster.jpeg" },
+  { "id": 4, "title": "Blender", "price": 30, "imageUrl": "blender.jpeg" },
+  { "id": 5, "title": "Microwave", "price": 100, "imageUrl": "microave.jpeg" },
+  { "id": 6, "title": "Refrigerator", "price": 500, "imageUrl": "fridge.jpeg" },
+  { "id": 12, "title": "Pot", "price": 20, "imageUrl": "pot.jpg" }
+]
